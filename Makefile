@@ -40,7 +40,7 @@ deploy:
 NETWORK_ARGS := --rpc-url http://localhost:8545 --private-key $(DEFAULT_ANVIL_KEY) --broadcast
 
 ifeq ($(findstring --network sepolia,$(ARGS)),--network sepolia)
-	NETWORK_ARGS := --rpc-url $(SEPOLIA_RPC_URL) --account $(ACCOUNT) --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
+	NETWORK_ARGS := --rpc-url $(https://eth-sepolia.g.alchemy.com/v2/b4cXtG8vVki8qfmFHxHmRrbbCFGTt8dd) --account $(Devwallet) --broadcast --verify --sender  0xf7ed43EacAd9b645C6F880e9ED8192A34C205F40 -vvvv
 endif
 
 deploy-sepolia:
