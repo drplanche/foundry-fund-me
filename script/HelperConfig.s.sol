@@ -12,7 +12,6 @@ abstract contract CodeConstants {
                                CHAIN IDS
     //////////////////////////////////////////////////////////////*/
     uint256 public constant ETH_SEPOLIA_CHAIN_ID = 11155111;
-    uint256 public constant ZKSYNC_SEPOLIA_CHAIN_ID = 300;
     uint256 public constant LOCAL_CHAIN_ID = 31337;
 }
 

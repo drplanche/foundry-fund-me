@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
 import {Script} from "forge-std/Script.sol";
@@ -11,7 +11,6 @@ contract DeployFundMe is Script {
         address priceFeed = helperConfig
             .getConfigByChainId(block.chainid)
             .priceFeed;
-
         vm.startBroadcast();
         FundMe fundMe = new FundMe(priceFeed);
         vm.stopBroadcast();
